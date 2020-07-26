@@ -34,7 +34,7 @@ body {
   justify-content: center;
 
   min-height: 100vh;
-  padding: 1rem 0 2rem;
+  padding: 0 0 1rem;
 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.77%, #000000 100%),
     url('./assets/bg.png');
@@ -72,7 +72,6 @@ body {
 }
 
 .social-links__container {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -92,7 +91,7 @@ body {
 }
 
 .icon {
-  margin: 1rem;
+  margin: 0 1rem;
   width: 4rem;
   height: 4rem;
   fill: none;
