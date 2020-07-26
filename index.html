@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Cumbia band from Wrocław" />
-    <title>☠︎ Faustina Calavera ☠︎</title>
+    <title>Faustina Calavera</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="Faustina Calavera" />
+    <meta name="application-name" content="Faustina Calavera" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
@@ -16,16 +25,63 @@
       <h1 aria-label="Faustina Calavera - cumbia band from Wrocław"></h1>
     </header>
 
-    <!-- TODO: optimize image -->
-    <img
-      class="logo--main"
-      src="./assets/faustinacalavera.png"
-      alt="Faustina Calavera"
-    />
-    <!-- --- -->
+    <picture>
+      <source
+        srcset="
+          ./assets/faustina-calavera-1000.webp 2x,
+          ./assets/faustina-calavera-500.webp
+        "
+        type="image/webp"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./assets/faustina-calavera-1000.png 2x,
+          ./assets/faustina-calavera-500.png
+        "
+        type="image/png"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./assets/faustina-calavera-800.webp 2x,
+          ./assets/faustina-calavera-400.webp
+        "
+        type="image/webp"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./assets/faustina-calavera-800.png 2x,
+          ./assets/faustina-calavera-400.png
+        "
+        type="image/png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./assets/faustina-calavera-600.webp 2x,
+          ./assets/faustina-calavera-300.webp
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./assets/faustina-calavera-600.png 2x,
+          ./assets/faustina-calavera-300.png
+        "
+        type="image/png"
+      />
+      <img
+        class="logo--main"
+        src="./assets/faustina-calavera-300.png"
+        alt="Faustina Calavera"
+      />
+    </picture>
 
     <nav class="social-links__container">
       <a
+        class="social-link"
         href="https://www.facebook.com/FaustinaCalavera/"
         aria-label="Faustina's Facebook profile"
         ><svg
@@ -39,6 +95,7 @@
         </svg>
       </a>
       <a
+        class="social-link"
         href="https://www.youtube.com/channel/UCKi4lcS2BtKU9hCTtk6xByQ"
         aria-label="Faustina's YouTube profile"
         ><svg
@@ -52,6 +109,7 @@
         </svg>
       </a>
       <a
+        class="social-link"
         href="https://www.instagram.com/faustinacalavera/"
         aria-label="Faustina's Instagram profile"
         ><svg

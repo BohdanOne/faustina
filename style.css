@@ -15,7 +15,16 @@
 
 html {
   font-size: 14px;
-  /* TODO: media queries */
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 body {
@@ -36,13 +45,21 @@ body {
 }
 
 .logo--main {
-  /* TODO: media queries */
   max-width: 300px;
   width: 90vw;
-  /* *** */
   opacity: 1;
   transform: translate3d(0,0,0);
   animation: slide-in 1.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .logo--main {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .logo--main {
+    max-width: 500px;
+  }
 }
 
 @keyframes slide-in {
@@ -62,7 +79,10 @@ body {
 .social-links__container {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
 
+.social-link {
+  text-decoration: none;
 }
 
 .link {
@@ -83,6 +103,12 @@ body {
   fill: none;
   cursor: pointer;
   transition: transform .2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 .icon > path {
