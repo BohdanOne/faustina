@@ -56,11 +56,6 @@ body {
     max-width: 400px;
   }
 }
-@media (min-width: 1024px) {
-  .logo--main {
-    max-width: 500px;
-  }
-}
 
 @keyframes slide-in {
   0% {
