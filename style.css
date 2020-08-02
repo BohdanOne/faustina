@@ -1,10 +1,6 @@
 :root {
   --col-primary: #eef0e8;
-  --col-secondary: #F29B30;
-  --col-ternary: #731A1A;
-  --col-red: #BF3939;
-  --col-green: #888C65;
-  --col-black: #0D2624;
+  --col-secondary: #f29b30;
 }
 
 * {
@@ -15,16 +11,6 @@
 
 html {
   font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media (min-width: 1024px) {
-  html {
-    font-size: 18px;
-  }
 }
 
 body {
@@ -41,34 +27,16 @@ body {
 
   font-family: 'Merriweather', serif;
   font-size: 1rem;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
+  color: var(--col-primary);
 }
 
 .logo--main {
   max-width: 300px;
   width: 90vw;
   opacity: 1;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   animation: slide-in 1.2s ease-in-out;
-}
-@media (min-width: 768px) {
-  .logo--main {
-    max-width: 400px;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -200%,0);
-  }
-  70% {
-    transform: translate3d(0, 15%,0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 0,0);
-  }
 }
 
 .social-links__container {
@@ -83,7 +51,7 @@ body {
   text-decoration: none;
   font: inherit;
   color: var(--col-primary);
-  transition: color .2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .link:hover {
@@ -96,13 +64,7 @@ body {
   height: 4rem;
   fill: none;
   cursor: pointer;
-  transition: transform .2s ease-in-out;
-}
-@media (min-width: 768px) {
-  .icon {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
+  transition: transform 0.2s ease-in-out;
 }
 
 .icon > path {
@@ -110,11 +72,63 @@ body {
 }
 
 .icon:hover {
-  transform: translate3d(0,10%,0);
+  transform: translate3d(0, 10%, 0);
 }
 
 .icon:hover > path {
   fill: var(--col-secondary);
+}
+
+.booking {
+  padding: 1rem;
+}
+
+.booking__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.link--booking {
+  margin: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .logo--main {
+    max-width: 400px;
+  }
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .link--booking {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -200%, 0);
+  }
+  70% {
+    transform: translate3d(0, 15%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /* TODO: add prefixes, minify css */
