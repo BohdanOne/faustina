@@ -1,6 +1,7 @@
 :root {
   --col-primary: #eef0e8;
   --col-secondary: #f29b30;
+  --col-ternary: #888C65;
 }
 
 * {
@@ -87,6 +88,7 @@ body {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--col-ternary);
 }
 
 .link--booking {
