@@ -80,11 +80,11 @@ body {
   fill: var(--col-secondary);
 }
 
-.booking {
+.section {
   padding: 1rem;
 }
 
-.booking__title {
+.section-title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -94,6 +94,11 @@ body {
 .link--booking {
   margin: 0.5rem;
   display: block;
+  text-align: center;
+}
+
+.gigs-list {
+  list-style: none;
   text-align: center;
 }
 
