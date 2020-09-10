@@ -48,12 +48,25 @@ body {
   text-decoration: none;
 }
 
+.gig {
+  transition: transform 0.2s ease-in-out;
+}
+
+.gig:hover {
+  transform: translate3d(0, -3px, 0)
+}
+
+.gig + .gig {
+  margin-top: .5rem;
+}
+
 .link {
   text-decoration: none;
   font: inherit;
   color: var(--col-primary);
   transition: color 0.2s ease-in-out;
 }
+
 
 .link:hover {
   color: var(--col-secondary);
